@@ -25,7 +25,8 @@ then
     [yY] )  echo "using it..."
             create_d=false;;
     [nN] )  echo "creating a new device..."
-            create_d=true;;
+            create_d=true
+            rm -f image;;
     * )     echo "invalid response"
             exit 1;;
   esac
